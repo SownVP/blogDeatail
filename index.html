@@ -36,9 +36,6 @@
         ::-webkit-selection {
             background: #d54253;
         }
-        /* body::-webkit-scrollbar{
-            display: none;
-        } */
         body::-webkit-scrollbar{
             display: none;
         }
@@ -139,6 +136,13 @@
             .navIcon {
                 display: block;
             }
+            .partRight{
+                display: none;
+            }
+            .partLeft{
+                width: 100%;
+            }
+            
         }
 
         @media screen and (min-width: 741px) and (max-width: 1070px) {
@@ -149,10 +153,15 @@
             .contentFooter {
                 justify-content: space-around;
             }
+            /* .postTitle{
+                font-size: 32px;
+            } */
         }
 
         @media screen and (max-width: 740px) {
-
+            .postTitle{
+                font-size: 32px;
+            }
             .searchIcon,
             .socialFooter,
             .textFooterCenter {
@@ -209,8 +218,8 @@
 </head>
 
 <body>
-    <div class="pt-[20px] pb-[80px] bg-[#13161B] mt-[96px] relative min-h-[100vh] content_Wrapper">
-        <div class="fixed h-[96px] bg-[#1f232b] top-0 left-0 right-0 z-[1]">
+    <div class="pt-[100px] pb-[80px] bg-[#13161B] relative min-h-[100vh] content_Wrapper">
+        <div class="fixed h-[70px] bg-[#1f232b] top-0 left-0 right-0 z-[1]">
             <div class="max-w-[1092px] w-[100%] h-full flex items-center justify-between mx-auto">
                 <a href="" class="flex items-center">
                     <i class="fa-solid fa-atom text-[40px] text-white mr-1 logoIcon"></i>
@@ -320,8 +329,8 @@
                     <hr class="h-[1px] bg-[#2a2c34] mt-[10px] mb-[24px]">
                     <div class="flex justify-around">
                         <span class="flex flex-col items-center cursor-pointer">
-                            <i class="text-[20px] mb-[4px] fa-regular fa-heart"></i>
-                            <i class="text-[20px] mb-[4px] fa-solid fa-heart" style="display: none;"></i>
+                            <i class="text-[20px] mb-[4px] fa-regular fa-heart post_Reaction"></i>
+                            <i class="text-[20px] mb-[4px] fa-solid fa-heart post_Reaction__active text-[#d54253]" style="display: none;"></i>
                             10
                         </span>
                         <span class="flex flex-col items-center cursor-pointer">
@@ -333,7 +342,7 @@
             </div>
             <div class="w-[60%] partLeft">
                 <div>
-                    <p class="font-bold text-[40px] mt-[-10px]">Cách sử dụng Routing trong ReactJS</p>
+                    <p class="font-bold text-[40px] mt-[-10px] postTitle">Cách sử dụng Routing trong ReactJS</p>
                     <div class="my-[20px] flex items-center justify-between">
                         <div class="flex items-center">
                             <div class="mr-[4px]">
@@ -344,16 +353,15 @@
                             <div>
                                 <p>Trịnh Văn Sơn</p>
                                 <div class="flex items-center">
-                                    <p class="opacity-[0.9]">12 ngày trước</p>
+                                    <p class="opacity-[0.9] font-light text-[14px]">12 ngày trước</p>
                                     <i class="opacity-[0.9] fa-solid fa-circle text-[4px] mx-[8px]"></i>
-                                    <p class="opacity-[0.9]">5 phút đọc</p>
+                                    <p class="opacity-[0.9] font-light text-[14px]">5 phút đọc</p>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <i class="cursor-pointer fa-regular fa-bookmark mr-[8px]"></i>
-                            <i class="cursor-pointer fa-solid fa-bookmark mr-[8px] text-[#d54253]"
-                                style="display: none;"></i>
+                            <i class="cursor-pointer fa-regular fa-bookmark mr-[8px] post_Reaction"></i>
+                            <i class="cursor-pointer fa-solid fa-bookmark mr-[8px] text-[#d54253] post_Reaction__active" style="display: none;"></i>
                             <i class="cursor-pointer fa-solid fa-ellipsis"></i>
                         </div>
                     </div>

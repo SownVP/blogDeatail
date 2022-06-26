@@ -141,6 +141,10 @@
             }
             .partLeft{
                 width: 100%;
+                margin-left: 0 !important;
+            }
+            .bodyWrapper {
+                padding: 0 8px;
             }
             
         }
@@ -153,9 +157,6 @@
             .contentFooter {
                 justify-content: space-around;
             }
-            /* .postTitle{
-                font-size: 32px;
-            } */
         }
 
         @media screen and (max-width: 740px) {
@@ -167,19 +168,15 @@
             .textFooterCenter {
                 display: none;
             }
-
             .contentFooter {
                 justify-content: center;
             }
-
             .container {
                 height: 100vh;
             }
-
-            .bodyWrapper {
-                padding: 0 8px;
+            .comment_Content{
+                width: 100%;
             }
-
         }
 
         @media screen and (max-width: 320px) {
@@ -219,99 +216,90 @@
 
 <body>
     <div class="pt-[100px] pb-[80px] bg-[#13161B] relative min-h-[100vh] content_Wrapper">
-        <div class="fixed h-[70px] bg-[#1f232b] top-0 left-0 right-0 z-[1]">
+        <div class="fixed h-[70px] bg-[#1f232b] top-0 left-0 right-0 z-[10]">
             <div class="max-w-[1092px] w-[100%] h-full flex items-center justify-between mx-auto">
                 <a href="" class="flex items-center">
                     <i class="fa-solid fa-atom text-[40px] text-white mr-1 logoIcon"></i>
-                    <span class="font-bold text-[36px] text-white logoName">Chemiscare</span>
+                    <span class="font-bold text-[36px] text-white logoName">Chemiscare</span>   
                 </a>
                 <ul class="flex justify-center grow nav">
                     <li class="">
                         <a class="p-4 text-[18px] text-[#868991] hover:text-[#d54253]" href="">
                             <i class="fa-solid fa-file-lines"></i>
-                            <span class="">Diễn Đàn</span>
+                            <span class="">Diễn Đàn</span>   
                         </a>
                     </li>
                     <li class="">
                         <a class="p-4 text-[18px] text-[#868991] hover:text-[#d54253]" href="">
                             <i class="fa-solid fa-calendar"></i>
-                            <span class="">Lịch Thi</span>
+                            <span class="">Lịch Thi</span>   
                         </a>
                     </li>
                     <li class="">
                         <a class="p-4 text-[18px] text-[#868991] hover:text-[#d54253]" href="">
                             <i class="fa-solid fa-scale-balanced"></i>
-                            <span class="">Thể Lệ</span>
+                            <span class="">Thể Lệ</span>   
                         </a>
                     </li>
                     <li class="">
                         <a class="p-4 text-[18px] text-[#868991] hover:text-[#d54253]" href="">
                             <i class="fa-solid fa-ranking-star"></i>
-                            <span class="">Xếp Hạng</span>
+                            <span class="">Xếp Hạng</span>   
                         </a>
                     </li>
                     <li class="">
                         <a class="p-4 text-[18px] text-[#868991] hover:text-[#d54253]" href="">
                             <i class="fa-solid fa-circle-question"></i>
-                            <span class="">Hỏi Đáp</span>
+                            <span class="">Hỏi Đáp</span>   
                         </a>
                     </li>
                 </ul>
                 <div class="flex items-center">
-                    <i
-                        class="fa-solid fa-magnifying-glass text-[#868991] px-5 py-5 cursor-pointer hover:text-[#d54253] text-[18px] searchIcon"></i>
                     <div class="relative navIcon hidden">
                         <i class="fa-solid fa-bars text-[30px]  hover:text-[#d54253] text-[#868991]"></i>
-                        <ul
-                            class="justify-between grow absolute top-[100%] right-1 flex-col bg-[#3d4048] text-white rounded-[4px] hidden">
+                        <ul class="justify-between grow absolute right-1 top-[100%] flex-col bg-[#3d4048] text-white rounded-[4px] hidden">
                             <li class="w-[200px]">
                                 <a class="px-6 block py-4 boder-bot hover:text-[#d54253]" href="">
                                     <i class="text-[18px] fa-solid fa-house"></i>
-                                    <span class="text-sm text-[16px]">Diễn Đàng</span>
+                                    <span class="text-sm text-[16px]">Diễn Đàng</span>   
                                 </a>
                             </li>
                             <li class="w-[200px]">
                                 <a class="px-6 block py-4 boder-bot hover:text-[#d54253]" href="">
                                     <i class="text-[18px] fa-solid fa-calendar"></i>
-                                    <span class="text-sm text-[16px]">Lịch Thi</span>
+                                    <span class="text-sm text-[16px]">Lịch Thi</span>   
                                 </a>
                             </li>
                             <li class="w-[200px]">
                                 <a class="px-6 block py-4 boder-bot hover:text-[#d54253]" href="">
                                     <i class="text-[18px] fa-solid fa-scale-balanced"></i>
-                                    <span class="text-sm text-[16px]">Thể Lệ</span>
+                                    <span class="text-sm text-[16px]">Thể Lệ</span>   
                                 </a>
                             </li>
                             <li class="w-[200px]">
                                 <a class="px-6 block py-4 hover:text-[#d54253]" href="">
                                     <i class="text-[18px] fa-solid fa-circle-question"></i>
-                                    <span class="text-sm text-[16px]">Hỏi Đáp</span>
+                                    <span class="text-sm text-[16px]">Hỏi Đáp</span>   
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <!-- <span class="cursor-pointer px-5 text-[18px] text-[#868991] hover:text-[#d54253]">Đăng nhập</span>
                     <span class="cursor-pointer px-5 py-[10px] text-[18px] text-[#000] rounded-[9px] bg-white hover:bg-[#fafafa]">Đăng ký</span> -->
-                    <div
-                        class="text-white relative cursor-pointer w-[40px] h-[40px] ml-5 bg-[#B8BCC6] rounded-[50%] text-[22px] items-center justify-center flex hover:bg-[#D44253]  avt">
-                        <img src="https://images.unsplash.com/photo-1650902153035-ecee8f4e8bb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                            alt="" class="w-full h-full rounded-[50%] object-cover">
+                    <div class="text-white relative cursor-pointer w-[40px] h-[40px] ml-5 bg-[#B8BCC6] rounded-[50%] text-[22px] items-center justify-center flex hover:bg-[#D44253]  avt">
+                        <img src="https://images.unsplash.com/photo-1650902153035-ecee8f4e8bb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="w-full h-full rounded-[50%] object-cover">
                         <span class="hidden">S</span>
-                        <ul
-                            class="absolute top_100-8 bg-[#3D4048] right-0 text-[18px] px-8 text-white py-4 font-normal rounded-[9px] hidden z-10">
+                        <ul class="absolute top_100-8 bg-[#3D4048] right-0 text-[18px] px-8 text-white py-4 font-normal rounded-[9px] hidden z-10">
                             <li class="flex py-2 border-b-[1px] border-[#51535a] border-solid items-center">
                                 <div>
-                                    <span
-                                        class="cursor-pointer w-[40px] h-[40px] bg-[#D44253] rounded-[50%] text-[22px] items-center justify-center flex font-light mr-1">
+                                    <span class="cursor-pointer w-[40px] h-[40px] bg-[#D44253] rounded-[50%] text-[22px] items-center justify-center flex font-light mr-1">
                                         <span class="hidden">S</span>
-                                        <img src="https://images.unsplash.com/photo-1650902153035-ecee8f4e8bb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                            alt="" class="w-full h-full rounded-[50%] object-cover">
+                                        <img src="https://images.unsplash.com/photo-1650902153035-ecee8f4e8bb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="w-full h-full rounded-[50%] object-cover">
                                     </span>
                                 </div>
                                 <span class="leading-[20px] text-[16px]">
                                     <span class="hover:text-[#d54253]">Trịnh Văn Sơn</span>
-                                    <span
-                                        class="cursor-text text-[12px] text-[#868991] overflow-hidden block max-w-[200px] min-w-[150px]">@gmail.com</span>
+                                    <span class="cursor-text text-[12px] text-[#868991] overflow-hidden block max-w-[200px] min-w-[150px]">@gmail.com</span>
                                 </span>
                             </li>
                             <li class="py-2 hover:text-[#d54253]">Lịch sử</li>
@@ -359,15 +347,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <i class="cursor-pointer fa-regular fa-bookmark mr-[8px] post_Reaction"></i>
-                            <i class="cursor-pointer fa-solid fa-bookmark mr-[8px] text-[#d54253] post_Reaction__active" style="display: none;"></i>
+                        <div class="flex items-center">
+                            <span class="flex flex-col items-center cursor-pointer mr-[8px]">
+                                <i class="text-[20px] mb-[4px] fa-regular fa-comment comment_Icon__open"></i>
+                            </span>
                             <i class="cursor-pointer fa-solid fa-ellipsis"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="fixed w-[100%] top-0 bottom-0 z-10 right-0 bg-[rgba(0,0,0,0.2)] comment_Wrapper hidden">
+            <div class="fixed w-[100%] z-50 top-0 bottom-0 right-0 bg-[rgba(0,0,0,0.2)] comment_Wrapper hidden">
                 <div class="comment_Content w-[50%] bg-[rgb(30,32,41)] absolute right-0 top-0 bottom-0 pt-[50px] pb-[60px] px-[40px] overflow-y-auto">
                     <div class="w-full text-right">
                         <i class="comment_Icon__close fa-solid fa-xmark text-[24px] cursor-pointer py-[10px] pl-[10px]"></i>
@@ -399,7 +388,7 @@
                                 <li class="flex my-[20px]">
                                     <div class="mr-[8px]">
                                         <img class="w-[36px] h-[36px] object-cover rounded-[50%]"
-                                            src="https://images.unsplash.com/photo-1650902153035-ecee8f4e8bb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                                        src="https://images.unsplash.com/photo-1650902153035-ecee8f4e8bb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                                     </div>
                                     <div style="max-width: calc(100% - 44px)">
                                         <div class="bg-[#353945] px-[12px] py-[10px] rounded-[16px] mb-[8px]">
